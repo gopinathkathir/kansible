@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 node{
   stage 'canary release'
-  git 'https://github.com/fabric8io/kansible.git'
+  git 'https://github.com/gopinathkathir/kansible.git'
 
   kubernetes.pod('buildpod').withImage('fabric8/go-builder').inside {
 
